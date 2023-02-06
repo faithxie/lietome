@@ -17,7 +17,7 @@
 - 环境配置
     -  windows安装
 
-        * 1.vs2019 
+        * 1.vs2019 , windows SDK,opencv-python
         * 2.pip install cmake 
         * 3.pip install dlib
         * 4.pip install face_recognition
