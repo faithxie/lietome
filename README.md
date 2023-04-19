@@ -21,5 +21,12 @@
         * 2.pip install cmake 
         * 3.pip install dlib
         * 4.pip install face_recognition
+- 模型下载地址
+- Haar特征可以理解为卷积模板
+  https://github.com/opencv/opencv/blob/master/data/haarcascades
+
+-trainer 训练获取 id xml
+-AttributeError: module 'cv2' has no attribute 'face'
+    pip install opencv-contrib-python
 
 

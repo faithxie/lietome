@@ -1,3 +1,7 @@
+# 1.通过 url或摄像头获取视频数据
+# 2.detectMultiScale 侦测人脸
+# 3.保存到 FaceImgReg
+
 import cv2
 import numpy as np
 import time
@@ -7,7 +11,7 @@ import face_recognition
 # url = "rtsp://admin:doposoft123@192.168.10.1:554/h264/ch1/main/av_stream"
 # url = "http://hls01open.ys7.com/openlive/bd793ee3abd54f64a04116c5478b17c3.hd.m3u8"
 # url = 'hr.mkv'
-url = '1.mp4'
+#url = '1.mp4'
 # cap = cv2.VideoCapture(url)
 cap = cv2.VideoCapture(0)  # 0为电脑内置摄像头  1为电脑外置摄像头
 # cap = cv2.VideoCapture(1)  #
@@ -28,7 +32,7 @@ while True:
 
 
     if len(rects) > 0:  # 如果>0说明检测到人了
-        print(rects )
+        print(rects)
         # 对比前一张
         pre_filename = filename
 
