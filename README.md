@@ -22,11 +22,15 @@
         * 3.pip install dlib
         * 4.pip install face_recognition
 - 模型下载地址
-- Haar特征可以理解为卷积模板
-  https://github.com/opencv/opencv/blob/master/data/haarcascades
+  - Haar特征可以理解为卷积模板
+    - https://github.com/opencv/opencv/blob/master/data/haarcascades
+  - 本地cv2
+    - External Librarise  Lib\site-packages\cv2\data\haarcascade_frontalcatface.xml 
 
--trainer 训练获取 id xml
--AttributeError: module 'cv2' has no attribute 'face'
-    pip install opencv-contrib-python
+- trainer 训练获取 id xml
+- AttributeError: module 'cv2' has no attribute 'face'
+  - pip install opencv-contrib-python
+- TODO:
+  - haarcascade 需要自己根据情况自己训练 人脸级联分类器
 
 

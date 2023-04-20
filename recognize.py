@@ -13,7 +13,7 @@ warningtime = 0
 #准备识别的图片
 def face_detect_demo(img):
     gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)#转换为灰度
-    face_detector=cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
+    face_detector=cv2.CascadeClassifier('haarcascade_frontalface_alt2.xml')
     # rects = cascade.detectMultiScale(gray_frame, scaleFactor=1.2, minNeighbors=3, minSize=(32, 32))
     # face=face_detector.detectMultiScale(gray,1.1,5,cv2.CASCADE_SCALE_IMAGE,(100,100),(300,300))
     face=face_detector.detectMultiScale(gray,1.2,3,cv2.CASCADE_SCALE_IMAGE,(32,32),(300,300))

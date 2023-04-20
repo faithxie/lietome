@@ -2,8 +2,10 @@ import cv2
 import time
 import random
 
-cap = cv2.VideoCapture(0)  # 0为电脑内置摄像头  1为电脑外置摄像头
-cascade = cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
+# cap = cv2.VideoCapture(0)  # 0为电脑内置摄像头  1为电脑外置摄像头
+url = '1.mkv'
+cap = cv2.VideoCapture(url)
+cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 while True:
     (ret, frame) = cap.read()
