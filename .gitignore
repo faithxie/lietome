@@ -4,3 +4,4 @@ venv
 *.mkv
 .mp4
 .jpg
+yolov4.weights
